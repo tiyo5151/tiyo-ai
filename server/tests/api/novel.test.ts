@@ -11,6 +11,6 @@ test(GET(noCookieClient), async () => {
 
 test(POST(noCookieClient.novel), async () => {
   const aozoraUrl = "aiu"
-  const res = await noCookieClient.novel.post({ body: { aozoraUrl } });
+  const res = await noCookieClient.novel.$post({ body: { aozoraUrl } });
   expect(res).toEqual(aozoraUrl)
 });
