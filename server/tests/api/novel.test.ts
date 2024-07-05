@@ -8,7 +8,7 @@ test(GET(noCookieClient.novel), async () => {
 });
 
 test(POST(noCookieClient.novel), async () => {
-  const aozoraUrl = 'https://www.aozora.gr.jp/cards/000148/files/773_14560.html';
+  const aozoraUrl = 'aiu';
   const res = await noCookieClient.novel.$post({ body: { aozoraUrl } });
-  expect(typeof res).toEqual('string');
+  expect(res).toEqual(aozoraUrl);
 });
