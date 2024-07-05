@@ -4,8 +4,8 @@ export type Methods = DefineMethods<{
   get: {
     resBody: string;
   };
-  post: {
-    reqBody: { aozoraUrl: string };
-    resBody: string;
+  post : {
+    reqBody:{aozoraUrl:string};
+    resBody:string;
   };
 }>;
